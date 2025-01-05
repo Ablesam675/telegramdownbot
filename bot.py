@@ -65,8 +65,7 @@ def home():
     return "Bot is running!"
 
 if __name__ == "__main__":
-    # Set webhook URL
-    webhook_url = f"https://telegramdownbot.onrender.com}"  # Replace with your Render URL
+    webhook_url = f"https://telegramdownbot.onrender.com}"
     bot.remove_webhook()
     bot.set_webhook(url=webhook_url)
     app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
